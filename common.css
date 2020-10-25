@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+body {
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* NAVIGATION */
+
+.logo {
+    text-align: center;
+    margin: 8px auto;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: #000000;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1000px) {
+    header {
+        margin: auto 100px;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        margin: 0 14px;
+        font-weight: 600;
+    }
+}

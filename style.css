@@ -1,55 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Syncopate:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-
-body {
-    margin: 10px;
-    font-family: 'Raleway', sans-serif;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 :root {
     --font-size: 14px;
-}
-
-/* NAVIGATION */
-
-.logo {
-    text-align: center;
-    margin: 8px auto;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li a {
-    text-decoration: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 6px;
-}
-
-nav ul li a {
-    color: #000000;
 }
 
 /* GRID */
@@ -71,6 +21,11 @@ nav ul li a {
     background-color: #fff;
     margin: auto;
     padding: 20px 22px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 6px;
     position: relative;
     grid-row: 2;
@@ -97,7 +52,7 @@ nav ul li a {
 
 .name span {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .title {
@@ -129,7 +84,6 @@ nav ul li a {
 }
 
 .profile_photo {
-    background-color: burlywood;
     grid-row: 3;
     grid-column: 1/10;
 }
@@ -271,7 +225,7 @@ nav ul li a {
 
     .name {
         grid-row: 3;
-        left: 0px;
+        left: 20px;
         top: -140px;
     }
 
@@ -282,16 +236,12 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 1000px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        background: brown;
-    }
 
     .inner_grid {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
         max-width: max-content;
+        padding: 80px 0px;
     }
 
     .profile_photo {
