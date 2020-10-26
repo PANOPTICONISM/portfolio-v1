@@ -34,6 +34,7 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(161,161,161,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(161,161,161,1);
     box-shadow: 0px 0px 5px 0px rgba(161,161,161,1);
+    z-index: 2;
 }
 
 
@@ -48,6 +49,8 @@
     border-top: 10px solid transparent;
     left: -19px;
     bottom: 16px;
+    filter: drop-shadow(-4px 2px 2px rgb(194, 192, 192));
+    z-index: 1;
   }
 
 .name span {
@@ -183,6 +186,51 @@
     max-width: 500px;
 }
 
+/* THIRD CONTAINER */
+.container h3 {
+    text-align: center;
+}
+
+.contacts {
+    background-color: #4E6B81;
+    padding: 20px;
+}
+
+.contacts img {
+    width: 25px;
+}
+
+.tumblr img {
+    width: 20px;
+}
+
+.contacts h4 {
+    color: #E6CA59;
+    margin: 0 auto;
+    display: flex;
+    max-width: 350px;
+}
+
+.linkedin, .dribbble, .instagram, .tumblr, .phone_number, .email {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4C728F;
+    max-width: 350px;
+    border: 1px solid #E6CA59;
+    border-radius: 8px;
+    color: white;
+    margin: 10px auto;
+}
+
+.contacts h5 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contacts span {
+    font-size: 13px;
+}
 
 /* MEDIA QUERIES */
 
