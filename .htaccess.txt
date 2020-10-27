@@ -2,8 +2,9 @@
 
 RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !_d
 
-RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
 
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
