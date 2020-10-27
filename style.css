@@ -1,5 +1,10 @@
 :root {
     --font-size: 14px;
+    --under-subtitle-size: 15px;
+    --subtitle-size: 22px;
+    --title-size: 30px;
+    --accent-colour: #314364;
+    --subtitle-colour: #E6CA59;
 }
 
 /* GRID */
@@ -112,15 +117,21 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    margin: 20px;
 }
 
-.contain h3, .contain span {
+.contain h3, .container h3 {
+    font-size: var(--subtitle-size);
+    margin: 8px auto;
+}
+
+.contain h3 {
     text-align: center;
 }
 
 .visual_identity, .ui_design, .development {
     position: relative;
-    max-width: 300px;
+    max-width: 290px;
     padding: 20px;
     border-radius: 4px 40px 4px 4px;
     text-align: left;
@@ -133,7 +144,7 @@
 
 .icon {
     position: absolute;
-    background: #314364;
+    background: var(--accent-colour);
     padding: 12px;
     border-radius: 5px;
     top: -25px;
@@ -141,6 +152,15 @@
 
 .icon img {
     width: 20px;
+}
+
+
+.areas h5 {
+    font-size: 15px;
+}
+
+.areas p {
+    font-size: var(--font-size);
 }
 
 .recent_project h5 {
@@ -156,9 +176,20 @@
     outline: none;
     border: none;
     padding: 8px 10px;
-    border: 1px solid #314364;
+    border: 1px solid var(--accent-colour);
     border-radius: 2px;
     cursor: pointer;
+    display: block;
+    grid-row: 3;
+    margin: 10px auto;
+    background: none;
+    width: 170px;
+    height: 40px;
+}
+
+.recent_project button:hover {
+    background: var(--accent-colour);
+    color: #fff;
 }
 
 .information {
@@ -169,118 +200,12 @@
     margin: 20px;
 }
 
-.recent_project button {
-    display: block;
-    grid-row: 3;
-    margin: 10px auto;
-    background: none;
-    width: 170px;
-    height: 40px;
-}
-
 .recent_project img {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(161,161,161,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(161,161,161,1);
     box-shadow: 0px 0px 5px 0px rgba(161,161,161,1);
     border-radius: 2px;
     max-width: 500px;
-}
-
-/* THIRD CONTAINER */
-.container h3 {
-    text-align: center;
-}
-
-.inner_container {
-    background: #4E6B81;
-}
-
-.contacts {
-    padding: 20px;
-}
-
-.contacts img {
-    width: 25px;
-}
-
-.tumblr img {
-    width: 20px;
-}
-
-.contacts h4 {
-    color: #E6CA59;
-    margin: 0 auto;
-    display: flex;
-    max-width: 335px;
-}
-
-.linkedin, .dribbble, .instagram, .tumblr, .phone_number, .email {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #4C728F;
-    max-width: 335px;
-    border: 1px solid #E6CA59;
-    border-radius: 8px;
-    color: white;
-    margin: 10px auto;
-}
-
-.contacts h5 {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.contacts span {
-    font-size: 13px;
-}
-
-/* FOOTER */
-
-footer {
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid lightgrey;
-    background: none;
-}
-
-.submit {
-    max-width: 200px;
-    margin: 10px auto;
-    padding: 6px 20px;
-    background: none;
-    border: none;
-    outline: none;
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(161,161,161,1);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(161,161,161,1);
-    box-shadow: 0px 0px 3px 0px rgba(161,161,161,1);
-    text-transform: uppercase;
-    display: flex;
-    border-radius: 4px;
-}
-
-.submit:hover {
-    background: white;
-}
-
-.submit img {
-    width: 15px;
-    margin: 0 10px;
-}
-
-.bottom {
-    text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -309,7 +234,7 @@ input, textarea {
     }
 
     .featured {
-        grid-column: 6/-1;
+        grid-column: 7/-1;
     }
 
 }
@@ -331,22 +256,6 @@ input, textarea {
     .areas {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
-
-    .contacts {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        grid-template-rows: auto;
-        max-width: 1150px;
-        margin: auto;
-    }
-
-    .contacts h4 {
-        grid-column: 1/-1;
-    }
-
-    .linkedin, .dribbble, .instagram, .tumblr, .phone_number, .email {
-        width: 335px;
     }
 }
 
