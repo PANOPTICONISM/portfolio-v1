@@ -1,0 +1,9 @@
+# mod_rewrite starts here aka rewrite how the links end
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !_d
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^(.*)$ $1.html [NC,L]
