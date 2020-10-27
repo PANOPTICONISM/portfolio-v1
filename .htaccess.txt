@@ -1,18 +1,10 @@
-## Remove html extension
-
-RewriteEngine On
-RewriteBase /
-
-# To externally redirect /dir/foo.html to /dir/foo
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
-RewriteRule ^ %1/ [R=301,L]
-
-# Add a trailing slash at the end    
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !/$/
-RewriteRule . %{REQUEST_URI}/ [L,R=301]
-
-# To internally forward /dir/foo to /dir/foo.html
+RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*?)/?$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/$ $1.html 
+
+# Forces a trailing slash to be added
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]
