@@ -19,12 +19,23 @@ img {
 
 /* NAVIGATION */
 
+header {
+    margin: 20px;
+}
+
 .logo {
     text-align: center;
     margin: 8px auto;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 20px;
+}
+
+.logo span {
+    background: var(--accent-colour);
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 100%;
 }
 
 ul {
@@ -162,11 +173,30 @@ input, textarea {
     text-align: center;
 }
 
+.bottom p {
+    font-size: 12px;
+}
+
+.logo_footer {
+    text-align: center;
+    margin: 8px auto;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.logo_footer span {
+    background: var(--accent-colour);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 1000px) {
-    header {
-        margin: auto 100px;
+    header, .bottom {
+        margin: 20px 100px;
     }
 }
 
@@ -182,7 +212,7 @@ input, textarea {
         text-transform: uppercase;
     }
 
-    .logo {
+    .logo, .logo_footer {
         margin: 0;
     }
 
@@ -206,5 +236,12 @@ input, textarea {
 
     .linkedin, .dribbble, .instagram, .tumblr, .phone_number, .email {
         width: 335px;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
     }
 }
