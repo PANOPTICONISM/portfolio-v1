@@ -1,20 +1,16 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
 
-    $email_from = 'customer@mariajalmeida.com';
-    $email_subject = 'New Message From Portfolio';
-    $email_body = "Name: $name.\n".
-                  "Email: $email.\n".
-                  "Message: $message.\n";
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $mailFrom = $_POST['mail'];
+        $message = $_POST['message'];
 
-     $to ="contact@mariajalmeida.com";
-     $headers = "From: $email_from \r\n";
-     $headers .= "Reply-To: $email \r\n";
+        $mailTo = "contact@mariajalmeida.com";
+        $headers = "From: ".$mailFrom;
+        $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
-     mail($to,$email_subject,$email_body,$headers);
-
-     header("location: success.html");
-
+        mail($mailTo, $subject, $txt, $headers);
+        header("Location: index.php?mailsend");
+    }
 ?>
