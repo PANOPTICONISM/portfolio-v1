@@ -29,27 +29,38 @@ img {
     margin: 40px;
     color: black;
     text-align: center;
-    background: orange;
     padding: 60px 20px;
+}
+
+.page-count p {
+    transform: rotate(270deg);
+    width: 20px;
+    line-height: 100px;
+    margin-top: 40px;
 }
 
 .page-count img {
     transform: rotate(270deg);
     width: 16px;
-    top: 14%;
+    top: 10%;
     left: 45%;
     position: fixed;
+    cursor: pointer;
 }
 
 .house {
-    border-left: 1px solid brown;
-    border-bottom: 1px solid brown;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 10px;
     padding-top: 50px;
 }
 
 .section-count {
     padding-top: 10px;
+}
+
+.section-current {
+    font-weight: 900;
 }
 
 
