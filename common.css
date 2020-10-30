@@ -28,7 +28,28 @@ img {
     left: 0;
     margin: 40px;
     color: black;
-    background: grey;
+    text-align: center;
+    background: orange;
+    padding: 60px 20px;
+}
+
+.page-count img {
+    transform: rotate(270deg);
+    width: 16px;
+    top: 14%;
+    left: 45%;
+    position: fixed;
+}
+
+.house {
+    border-left: 1px solid brown;
+    border-bottom: 1px solid brown;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.section-count {
+    padding-top: 10px;
 }
 
 
