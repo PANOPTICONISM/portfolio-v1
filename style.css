@@ -87,6 +87,10 @@
     display: inline-flex;
 }
 
+.title p {
+    font-weight: 400;
+}
+
 .profile_photo img {
     max-width: 400px;
 }
@@ -157,19 +161,24 @@
 
 .areas h5 {
     font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .areas p {
     font-size: var(--font-size);
+    font-weight: 300;
 }
 
 .recent_project h5 {
     font-size: 17px;
     max-width: 250px;
+    margin-bottom: 10px;
 }
 
 .recent_project p {
     font-size: var(--font-size);
+    font-weight: 300;
 }
 
 .recent_project button {
