@@ -15,7 +15,7 @@ $('.section').each(function (i,el) {
 		if (i == 0) {
 			document.querySelector(".page-count p").textContent = "WELCOME";
 		} else if (i == 1) {
-			document.querySelector(".page-count p").textContent = "NAVIGATION";
+			document.querySelector(".page-count p").textContent = "PRESENTATION";
 		} else if (i == 2) {
 			document.querySelector(".page-count p").textContent = "CONTACT";
 		}
@@ -23,7 +23,7 @@ $('.section').each(function (i,el) {
 		if (direction == 'up') {
 			if (i == 02) {
 				console.log("middle")
-				document.querySelector(".page-count p").textContent = "NAVIGATION";
+				document.querySelector(".page-count p").textContent = "PRESENTATION";
 			} else if (i == 01) {
 				console.log("welcome");
 				document.querySelector(".page-count p").textContent = "WELCOME";
