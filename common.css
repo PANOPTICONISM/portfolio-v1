@@ -293,14 +293,6 @@ textarea::placeholder, input::placeholder {
         margin: 20px 100px;
     }
 
-    .grid {
-        padding: 40px 0;
-    }
-
-    .contain {
-        padding: 40px 0;
-    }
-
     nav ul li {
         margin: auto 40px;
         margin-right: 0;

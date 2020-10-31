@@ -291,7 +291,7 @@
     }
 
     .title {
-        grid-column: 6/10;
+        grid-column: 6/12;
         grid-row: 4/8;
     }
 
@@ -328,6 +328,14 @@
     .areas, .recent_project {
         max-width: 1100px;
         margin: auto;
+    }
+
+    .grid {
+        padding: 20px 0;
+    }
+
+    .contain {
+        padding: 20px 0;
     }
 }
 
