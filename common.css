@@ -10,6 +10,10 @@ body {
     background: #F7F7F7;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -19,48 +23,8 @@ img {
     box-sizing: border-box;
 }
 
-/* SIDE PAGE COUNT */
-
 .page-count {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    margin: 40px;
-    color: black;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.page-count p {
-    transform: rotate(270deg);
-    width: 20px;
-    line-height: 100px;
-    margin-top: 40px;
-}
-
-.page-count img {
-    transform: rotate(270deg);
-    width: 16px;
-    top: 10%;
-    left: 45%;
-    position: fixed;
-    cursor: pointer;
-}
-
-.house {
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 10px;
-    padding-top: 50px;
-}
-
-.section-count {
-    padding-top: 10px;
-}
-
-.section-current {
-    font-weight: 900;
+    display: none;
 }
 
 
@@ -114,6 +78,16 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+}
+
+#chat {
+    padding: 10px 14px;
+    border: 1px solid var(--accent-colour);
+}
+
+#chat:hover {
+    color: white;
+    background: var(--accent-colour);
 }
 
 /* FOOTER */
@@ -263,10 +237,66 @@ textarea::placeholder, input::placeholder {
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 1400px) {
+        /* SIDE PAGE COUNT */
+
+.page-count {
+    display: block;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin: 40px;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-count p {
+    transform: rotate(270deg);
+    width: 20px;
+    line-height: 100px;
+    margin-top: 40px;
+}
+
+.page-count img {
+    transform: rotate(270deg);
+    width: 16px;
+    top: 10%;
+    left: 45%;
+    position: fixed;
+    cursor: pointer;
+}
+
+.house {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.section-count {
+    padding-top: 10px;
+}
+
+.section-current {
+    font-weight: 900;
+}
+}
+
 @media only screen and (min-width: 1000px) {
     header, .bottom {
         margin: 20px 100px;
     }
+
+    .grid {
+        padding: 60px 0;
+    }
+
+    .contain {
+        padding: 40px 0;
+    }
+
 }
 
 @media only screen and (min-width: 700px) {
