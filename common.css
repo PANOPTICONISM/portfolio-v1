@@ -68,10 +68,11 @@ ul li a {
 nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 5px;
+    margin: 0 7px;
 }
 
 nav ul li a {
