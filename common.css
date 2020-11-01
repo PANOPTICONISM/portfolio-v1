@@ -183,6 +183,10 @@ textarea::placeholder, input::placeholder {
     font-size: 12px;
 }
 
+.g-recaptcha {
+    margin: auto;
+}
+
 .submit {
     max-width: 200px;
     margin: 10px auto;
