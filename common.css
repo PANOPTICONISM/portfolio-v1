@@ -220,6 +220,7 @@ textarea::placeholder, input::placeholder {
 
 .bottom p {
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .logo_footer {
