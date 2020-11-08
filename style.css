@@ -1,11 +1,3 @@
-:root {
-    --font-size: 13px;
-    --under-subtitle-size: 15px;
-    --subtitle-size: 22px;
-    --title-size: 30px;
-    --accent-colour: #314364;
-    --subtitle-colour: #E6CA59;
-}
 
 /* GRID */
 
@@ -162,7 +154,6 @@
 .icon img {
     width: 20px;
 }
-
 
 .areas h5 {
     font-size: var(--under-subtitle-size);

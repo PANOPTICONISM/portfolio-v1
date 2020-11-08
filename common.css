@@ -4,6 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
 
+:root {
+    --font-size: 13px;
+    --under-subtitle-size: 15px;
+    --subtitle-size: 22px;
+    --title-size: 30px;
+    --accent-colour: #314364;
+    --subtitle-colour: #E6CA59;
+}
+
 body {
     margin: 10px;
     font-family: 'Poppins', sans-serif;
