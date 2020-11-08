@@ -83,6 +83,14 @@ nav ul li a {
     font-family: 'Raleway', sans-serif;
 }
 
+nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.active {
+    color: var(--accent-colour);
+}
+
 #chat {
     padding: 10px 14px;
     border: 1px solid var(--accent-colour);

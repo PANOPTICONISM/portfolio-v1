@@ -1,5 +1,5 @@
 :root {
-    --font-size: 14px;
+    --font-size: 13px;
     --under-subtitle-size: 15px;
     --subtitle-size: 22px;
     --title-size: 30px;
@@ -152,6 +152,11 @@
     padding: 12px;
     border-radius: 5px;
     top: -25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon img {
@@ -160,7 +165,7 @@
 
 
 .areas h5 {
-    font-size: 15px;
+    font-size: var(--under-subtitle-size);
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -286,7 +291,7 @@
     .name {
         grid-column: 5/7;
         grid-row: 3/4;
-        top: -150px;
+        top: -120px;
         left: 30px;
     }
 
