@@ -1,3 +1,11 @@
+window.addEventListener("load", start);
+
+let loadScreen = document.querySelector(".spinner-box");
+
+function start() {
+	loadScreen.style.display = "none"; 
+}
+
 //Set count for total number of sections
 $('.section-count').text("0" + $('.section').size());
 
