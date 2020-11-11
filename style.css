@@ -177,22 +177,23 @@
     font-weight: 300;
 }
 
-.recent_project button {
-    outline: none;
-    border: none;
+.recent_project a {
+    font-size: 11px;
+    text-decoration: none;
+    text-align: center;
     padding: 8px 10px;
     border: 1px solid var(--accent-colour);
+    color: black;
     border-radius: 2px;
-    cursor: pointer;
     display: block;
     grid-row: 3;
     margin: 10px auto;
     background: none;
     width: 170px;
-    height: 40px;
+    max-height: 35px;
 }
 
-.recent_project button:hover {
+.recent_project a:hover {
     background: var(--accent-colour);
     color: #fff;
 }
@@ -232,10 +233,11 @@
         grid-row: 1;
     }
 
-    .recent_project button {
+    .recent_project a {
         grid-column: 1/6;
         grid-row: 1;
-        margin-top: 200px;
+        margin-top: 180px;
+        margin-left: 0;
     }
 
     .featured {

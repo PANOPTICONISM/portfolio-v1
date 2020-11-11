@@ -133,7 +133,7 @@ header, .bottom {
     margin: 8px auto;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -144,9 +144,9 @@ header, .bottom {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     display: inline-block;
-    line-height: 35px;
+    line-height: 32px;
     text-align: center;
-    width: 35px;
+    width: 32px;
     font-weight: 900;
 }
 
@@ -256,6 +256,10 @@ nav ul li a:hover {
 .contacts span {
     font-size: 13px;
     font-weight: 300;
+}
+
+.phone_number a {
+    text-decoration: none;
 }
 
 /* FORM */
