@@ -15,6 +15,13 @@
     display: flex;
     max-width: 450px;
     margin: auto;
+    border: 3px solid var(--accent-colour);
+    border-radius: 2%;
+    background: var(--subtitle-colour);
+}
+
+.drawing {
+    grid-row: 1;
 }
 
 .skills_inner {
@@ -28,6 +35,10 @@
 .skills img {
     width: 50px;
     margin: 20px;
+}
+
+.content {
+    margin: 20px auto;
 }
 
 .content h1 {
@@ -86,6 +97,12 @@
         margin: auto;
         margin-bottom: 0;
     }
+
+    .grid img {
+        background: none;
+        border-radius: 0;
+        border: none;
+    }
 }
 
 @media only screen and (min-width: 1002px) {
@@ -97,6 +114,7 @@
 
     .content {
         grid-column: 2/7;
+        margin-right: 100px;
     }
 
     .drawing {

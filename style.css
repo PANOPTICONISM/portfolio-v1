@@ -116,7 +116,7 @@
     margin: 20px;
 }
 
-.contain h3, .container h3 {
+.contain h3 {
     font-size: var(--subtitle-size);
     margin: 8px auto;
 }

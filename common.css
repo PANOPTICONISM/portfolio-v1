@@ -200,6 +200,8 @@ nav ul li a:hover {
 /* THIRD CONTAINER */
 .container h3 {
     text-align: center;
+    font-size: var(--subtitle-size);
+    margin: 8px auto;
 }
 
 .inner_container {
