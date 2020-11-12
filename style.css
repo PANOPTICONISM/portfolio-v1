@@ -120,6 +120,7 @@
     font-size: var(--subtitle-size);
     margin: 8px auto;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .contain h4, .portfolio h4 {
@@ -220,6 +221,11 @@
 }
 
 /* PORTFOLIO */
+
+.portfolio {
+    padding: 20px;
+    margin: 20px;
+}
 
 .row {
     display: flex;
@@ -393,6 +399,7 @@
 
     .recent_project {
         padding: 50px;
+        padding-bottom: 0;
     }
 
     .areas, .recent_project {
