@@ -25,7 +25,9 @@ $('.section').each(function (i,el) {
 		} else if (i == 1) {
 			document.querySelector(".page-count p").textContent = "PRESENTATION";
 		} else if (i == 2) {
-			document.querySelector(".page-count p").textContent = "CONTACT";
+			document.querySelector(".page-count p").textContent = "PORTFOLIO";
+		} else if (i == 3) {
+			document.querySelector(".page-count p").textContent = "CONTACT"; 
 		}
 
 		if (direction == 'up') {
@@ -36,7 +38,7 @@ $('.section').each(function (i,el) {
 				console.log("welcome");
 				document.querySelector(".page-count p").textContent = "WELCOME";
 			} else if (i == 03) {
-				console.log("bye")
+				document.querySelector(".page-count p").textContent = "PORTFOLIO";
 			}
 		}
 	 }

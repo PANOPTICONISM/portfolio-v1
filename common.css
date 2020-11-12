@@ -220,7 +220,7 @@ nav ul li a:hover {
     width: 20px;
 }
 
-.contacts h4, .contain h4 {
+.contacts h4 {
     color: var(--subtitle-colour);
     margin: 0 auto;
     display: flex;
