@@ -223,7 +223,6 @@
 /* PORTFOLIO */
 
 .portfolio {
-    padding: 20px;
     margin: 20px;
 }
 
@@ -234,70 +233,38 @@
     margin: 20px;
 }
 
-.column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
 .column img {
     display: flex;
+    max-width: 500px;
+    object-fit: cover;
 }
 
-.scroll {
-    max-width: 450px;
-    max-height: 300px;
-    overflow: auto;
-    border: 2px solid black;
-    margin: auto;
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(112,112,112,1);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(112,112,112,1);
-    box-shadow: 0px 0px 3px 0px rgba(112,112,112,1);
+.filters {
+    max-width: 310px;
+    margin: 15px auto;
+    margin-bottom: -10px;
 }
 
-.scroll img {
-    margin: 0;
-    max-width: 450px;
+.filters button {
+    outline: none;
+    border: none;
+    background: var(--accent-colour);
+    color: #fff;
+    padding: 8px 10px;
+    margin: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 140px;
+    text-transform: uppercase;
+    font-size: 11px;
 }
 
-.portrait {
-    padding: 50px;
-    background-color: darkcyan;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portrait img {
-    max-width: 280px;
-}
-
-.musician {
-    padding: 20px;
-    background: rgb(43, 43, 43);
-}
-
-.nexus {
-    padding: 30px;
-    background: rgb(33, 96, 155);
-}
-
-.marize {
-    padding: 25px;
-    background-color: rgb(25, 155, 116);
+.filters button:hover {
+    background: var(--subtitle-colour);
+    color: black;
 }
 
 /* MEDIA QUERIES */
-
-@media only screen and (min-width: 1097px) {
-    .inner_grid {
-        max-width: 1150px!important;
-    }
-
-    .column {
-        flex: 25%;
-        max-width: 25%;
-    }
-}
 
 @media only screen and (min-width: 997px) {
 
@@ -413,6 +380,35 @@
 
     .contain {
         padding: 20px 0;
+    }
+
+    .column img {
+        max-width: 350px;
+        max-height: 260px;
+    }
+
+    .filters {
+        margin-right: 13px;
+        max-width: none;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1097px) {
+    .inner_grid {
+        max-width: 1150px!important;
+    }
+
+    .portfolio {
+        width: 1090px;
+        margin: auto;
+    }
+
+    .filters {
+        margin-right: 13px;
+        max-width: none;
+        text-align: right;
     }
 }
 
