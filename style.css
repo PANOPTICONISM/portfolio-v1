@@ -72,7 +72,26 @@
     font-family: 'Syncopate', sans-serif;
     margin: 0;
     font-size: 30px;
+    max-width: fit-content;
+    margin: auto;
 }
+
+  .typewriter-text {
+    border-right: solid var(--accent-colour) 7px;
+    animation: cursor 1s ease-in-out infinite;
+  }
+
+  @keyframes cursor {
+    from { border-color: var(--accent-colour); }
+    to { border-color: transparent; }
+  }
+  
+  @media (max-width: 767.98px) {
+    .typewriter { font-size: 35px; }
+  }
+  @media (min-width: 768px) {
+    .typewriter { font-size: 60px; }
+  }
 
 .title img {
     width: 20px;
@@ -117,7 +136,7 @@
 }
 
 .contain {
-    margin: 20px;
+    margin: 40px;
 }
 
 .contain h3, .portfolio h3 {
@@ -158,11 +177,12 @@
     font-size: var(--under-subtitle-size);
     position: relative;
     max-width: 300px;
+    margin-bottom: 40px;
 }
 
 .visual_identity, .ui_design, .development {
     position: relative;
-    max-width: 290px;
+    max-width: 330px;
     padding: 20px;
     border-radius: 4px 40px 4px 4px;
     text-align: left;
@@ -295,7 +315,7 @@
 /* PORTFOLIO */
 
 .portfolio {
-    margin: 20px;
+    margin: 40px;
 }
 
 .row {
@@ -366,7 +386,7 @@
     .recent_project a {
         grid-column: 1/6;
         grid-row: 1;
-        margin-top: 180px;
+        margin-top: 165px;
         margin-left: 0;
     }
 
@@ -424,6 +444,11 @@
         grid-row: 4/8;
     }
 
+    .title h2 {
+        max-width: auto;
+        margin-right: 0;
+    }
+
     .social_media {
         grid-column: 12/-1;
         grid-row: 1/10;
@@ -464,10 +489,6 @@
         padding: 20px 0;
     }
 
-    .contain {
-        padding: 20px 0;
-    }
-
     .column img {
         max-width: 350px;
         max-height: 260px;
@@ -481,6 +502,10 @@
         max-width: 700px;
     }
 
+    .contain h4, .portfolio h4 {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media only screen and (min-width: 1097px) {
@@ -490,16 +515,26 @@
 
     .portfolio {
         width: 1090px;
-        margin: auto;
+        margin: 50px auto;
     }
 
     .flex {
         display: inline;
     }
 
-    .filters {
-        max-width: 800px;
+    .filters button {
+        border: none;
+        width: 259px;
     }
+
+    .filters {
+        max-width: 1050px;
+        border-bottom: 1px solid black;
+    }
+
+    .filters button:after, nav ul li a:after {
+        bottom: -5px;
+      }
 }
 
 
