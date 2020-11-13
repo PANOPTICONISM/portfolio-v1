@@ -175,10 +175,7 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-}
-
-nav ul li a:hover {
-    border-bottom: 2px solid black;
+    position: relative;
 }
 
 .active {
