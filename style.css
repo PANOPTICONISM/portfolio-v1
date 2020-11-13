@@ -172,6 +172,10 @@
     font-weight: 300;
 }
 
+.recent_project {
+    display: grid;
+}
+
 .recent_project h5 {
     font-size: 17px;
     max-width: 250px;
@@ -184,25 +188,61 @@
 }
 
 .recent_project a {
-    font-size: 11px;
-    text-decoration: none;
-    text-align: center;
-    padding: 8px 10px;
-    border: 1px solid var(--accent-colour);
-    color: black;
-    border-radius: 2px;
-    display: block;
-    grid-row: 3;
-    margin: 10px auto;
+    font-size: 12px;
     background: none;
-    width: 170px;
-    max-height: 35px;
+    height: 40px;
+    max-width: 210px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.recent_project a:hover {
-    background: var(--accent-colour);
-    color: #fff;
+.recent_project a:hover::after {
+    transition-duration: 0.5s;
+    transform: scale(1.02);
 }
+
+.recent_project a:hover .button_icon {
+    transform: rotate(0deg);
+}
+
+.recent_project a:before {
+    content: '';
+    transition: all 0.4s var(--animationCurve);
+    background: var(--accent-colour);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .recent_project a:after {
+    content: '';
+    transition: all 0.4s var(--animationCurve);
+    background: var(--accent-colour);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .button_icon {
+      margin-left: 10px;
+      fill: #F1F4F6;
+      transform: rotate(-28deg);
+  }
 
 .information {
     margin: 15px auto;
@@ -396,6 +436,10 @@
     .filters {
         max-width: none;
         text-align: center;
+    }
+
+    .filters button {
+        margin-right: 3px;
     }
 }
 
