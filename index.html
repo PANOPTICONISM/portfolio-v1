@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="common.css">
     <link rel="shortcut icon" href="img/p_logo.png">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        var $i = jQuery.noConflict(true);
+    </script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var $j = jQuery.noConflict(true);
+    </script> 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
@@ -35,8 +42,8 @@
         <nav>
             <ul>
                 <li><a href="index" class="active">home</a></li>
-                <li><a href="about">about</a></li>
-                <li><a href="">portfolio</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
                 <li><a href="#footer" id="chat">let's chat</a></li>
             </ul>
         </nav>
@@ -51,7 +58,9 @@
             </div>
             <div class="title">
                 <h1>Multimedia</h1>
-                <h2>Designer</h2>
+                <div class='typewriter'>
+                    <h2 class='typewriter-text' data-text='[ "designer. ", "developer. " ]'></h2>
+                </div>
                 <p><img src="img/location.svg" alt="ping"> Based in Copenhagen, Denmark.</p>
             </div>
             <div class="social_media">
@@ -98,7 +107,7 @@
                 <h5>My most recent project, selected for your viewing.</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, delectus?</p>
             </div>
-            <a href="portfolio">View more projects <svg class="button_icon" width="24" height="24" viewBox="0 0 24 24">
+            <a href="#portfolio">View more projects <svg class="button_icon" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M3 11h14.17l-3.58-3.59L15 6l6 6-6 6-1.41-1.41L17.17 13H3z"></path>
               </svg></a>
             <div class="featured">
@@ -106,7 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio section">
+    <div class="portfolio section" id="portfolio">
         <h3>My Portfolio</h3>
         <h4>PROFESSIONAL WORK</h4>
         <div class="filters">
