@@ -109,10 +109,14 @@
 
 /* SECOND GRID */
 
-.contain, .recent_project {
+.recent_project {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    margin: 20px;
+}
+
+.contain {
     margin: 20px;
 }
 
@@ -121,6 +125,29 @@
     margin: 8px auto;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
+    max-width: 300px;
+}
+
+.contain h3:before,
+.contain h4:after, .portfolio h3:before,
+.portfolio h4:after {
+  width: 30px;
+  height: 30px;
+  content: '';
+  position: absolute;
+}
+.contain h3:before, .portfolio h3:before {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  top: -7px;
+  left: -13px;
+}
+.contain h4:after, .portfolio h4:after {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  bottom: -7px;
+  right: -13px;
 }
 
 .contain h4, .portfolio h4 {
@@ -129,6 +156,8 @@
     display: flex;
     justify-content: center;
     font-size: var(--under-subtitle-size);
+    position: relative;
+    max-width: 300px;
 }
 
 .visual_identity, .ui_design, .development {
@@ -172,10 +201,6 @@
     font-weight: 300;
 }
 
-.recent_project {
-    display: grid;
-}
-
 .recent_project h5 {
     font-size: 17px;
     max-width: 250px;
@@ -191,15 +216,16 @@
     font-size: 12px;
     background: none;
     height: 40px;
-    max-width: 210px;
+    width: 210px;
     color: #fff;
     text-decoration: none;
     position: relative;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: 20px;
+    display: block;
+    grid-row: 3;
+    margin: 10px auto;
 }
 
 .recent_project a:hover::after {
@@ -208,7 +234,7 @@
 }
 
 .recent_project a:hover .button_icon {
-    transform: rotate(0deg);
+    transform: translateY(30%) rotate(0deg);
 }
 
 .recent_project a:before {
@@ -238,10 +264,16 @@
     z-index: -1;
   }
 
+  .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
   .button_icon {
       margin-left: 10px;
       fill: #F1F4F6;
-      transform: rotate(-28deg);
+      transform: translateY(30%) rotate(-28deg);
   }
 
 .information {
