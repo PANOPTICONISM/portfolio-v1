@@ -72,7 +72,6 @@ $j(document).ready(function() {
 		}
   
 		  }, 150);
-  
 	  }
   
 	  function deleting( index, text ) {
@@ -86,13 +85,20 @@ $j(document).ready(function() {
 		  textIndex--;
 		} else {
 		  index++;
-		  if ( index == text.length ) { index = 0; }
+		  if ( index == text.length ) { index = 0; console.log("web");
+		  document.querySelector("h1").textContent = "MULTIMEDIA"
+		 } else {
+			index++;
+		 } if ( index == text.length ) {
+			 index = 1;
+			 console.log("multi");
+			 document.querySelector("h1").textContent = "FRONTEND"
+		 }
 		  typing( index, text );
 		  clearInterval(tmp);
 		}
   
 		  }, 150)
-  
 	}
   
   });

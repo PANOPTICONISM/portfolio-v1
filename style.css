@@ -73,12 +73,15 @@
     margin: 0;
     font-size: 30px;
     max-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: -webkit-fit-content;
     margin: auto;
 }
 
   .typewriter-text {
     border-right: solid var(--accent-colour) 7px;
     animation: cursor 1s ease-in-out infinite;
+    height: 29px;
   }
 
   @keyframes cursor {
@@ -123,7 +126,7 @@
 
 .social_media img {
     width: 34px;
-    margin: 4px 0;
+    margin: 14px 0;
 }
 
 /* SECOND GRID */
@@ -136,7 +139,7 @@
 }
 
 .contain {
-    margin: 40px;
+    margin: 40px 0;
 }
 
 .contain h3, .portfolio h3 {
@@ -182,7 +185,7 @@
 
 .visual_identity, .ui_design, .development {
     position: relative;
-    max-width: 330px;
+    max-width: 340px;
     padding: 20px;
     border-radius: 4px 40px 4px 4px;
     text-align: left;
@@ -225,6 +228,7 @@
     font-size: 17px;
     max-width: 250px;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .recent_project p {
@@ -236,7 +240,7 @@
     font-size: 12px;
     background: none;
     height: 40px;
-    width: 210px;
+    width: 190px;
     color: #fff;
     text-decoration: none;
     position: relative;
@@ -298,10 +302,11 @@
 
 .information {
     margin: 15px auto;
+    max-width: 500px;
 }
 
 .recent_project {
-    margin: 20px;
+    margin: 30px;
 }
 
 .recent_project img {
@@ -315,7 +320,7 @@
 /* PORTFOLIO */
 
 .portfolio {
-    margin: 40px;
+    margin: 40px 0;
 }
 
 .row {
@@ -347,7 +352,7 @@
     padding: 0;
     min-width: 185px;
     font-weight: 600;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
 }
@@ -372,6 +377,13 @@
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 700px) {
+    .visual_identity, .development, .ui_design {
+        margin: 20px 13px;
+        max-width: none;
+    }
+}
+
 @media only screen and (min-width: 997px) {
 
     .recent_project {
@@ -381,17 +393,22 @@
     .information {
         grid-column: 1/6;
         grid-row: 1;
+        margin-top: 80px;
     }
 
     .recent_project a {
         grid-column: 1/6;
         grid-row: 1;
-        margin-top: 165px;
+        margin-top: 200px;
         margin-left: 0;
     }
 
     .featured {
         grid-column: 7/-1;
+    }
+
+    .typewriter-text {
+        height: 34px;
     }
 
 }
@@ -481,7 +498,7 @@
     }
 
     .areas, .recent_project {
-        max-width: 1100px;
+        max-width: 1150px;
         margin: auto;
     }
 
@@ -502,8 +519,12 @@
         max-width: 700px;
     }
 
+    .contain h3, .portfolio h3 {
+        margin-top: 60px;
+    }
+
     .contain h4, .portfolio h4 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
 }
@@ -535,6 +556,10 @@
     .filters button:after, nav ul li a:after {
         bottom: -5px;
       }
+
+      .typewriter-text {
+        height: 40px;
+    }
 }
 
 
