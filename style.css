@@ -142,6 +142,10 @@
     margin: 40px 0;
 }
 
+.areas {
+    margin: auto 30px;
+}
+
 .contain h3, .portfolio h3 {
     font-size: var(--subtitle-size);
     margin: 0px auto;
