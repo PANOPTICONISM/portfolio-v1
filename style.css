@@ -323,15 +323,20 @@
 /* PORTFOLIO */
 
 .portfolio {
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    overflow: hidden;
 }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
 
 .column img {
     display: flex;
@@ -340,24 +345,57 @@
 }
 
 .filters {
-    max-width: 380px;
-    margin: 15px auto;
-    margin-bottom: -15px;
-    text-align: center;
+    text-align: right;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
 }
 
-.filters button {
+summary {
+    list-style-type: none;
+    text-align: right;
+    cursor: pointer;
+  }
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 3px;
+    margin-left: 20px;
+}
+
+  .filters .buttons {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0 0 0 20px;
+}
+  
+  summary::-webkit-details-marker {
+    background: none;
+  }
+
+.filters details button {
     outline: none;
     border: none;
     cursor: pointer;
     background: none;
-    border-bottom: 1px solid black;
-    padding: 0;
-    min-width: 185px;
+    min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid grey;
 }
 
 .filters button:after, nav ul li a:after {
@@ -365,7 +403,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     background-color: brown;
     transform: scaleX(0);
@@ -546,17 +584,11 @@
         display: inline;
     }
 
-    .filters button {
-        border: none;
-        width: 259px;
-    }
-
     .filters {
-        max-width: 1050px;
-        border-bottom: 1px solid black;
+        max-width: 1046px;
     }
 
-    .filters button:after, nav ul li a:after {
+    nav ul li a:after {
         bottom: -5px;
       }
 
