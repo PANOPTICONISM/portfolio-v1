@@ -129,13 +129,16 @@ header, .bottom {
     margin: 20px;
 }
 
-.logo {
+.logo, .logo_footer {
     display: flex;
+    align-items: center;
     margin: 8px auto;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 18px;
     font-weight: 500;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
 }
 
 .logo span {
