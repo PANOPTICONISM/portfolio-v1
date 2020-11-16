@@ -476,7 +476,7 @@
       display: block;
   }
 
-.column img {
+.row img {
     display: flex;
     max-width: 500px;
     object-fit: cover;
@@ -693,7 +693,7 @@ summary {
         padding: 20px 0;
     }
 
-    .column img {
+    .row img {
         max-width: 350px;
         max-height: 260px;
     }
