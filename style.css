@@ -419,6 +419,7 @@
 
 .skills img {
     width: 50px;
+    height: 50px;
     margin: 20px;
 }
 
@@ -492,6 +493,10 @@ summary {
     list-style: none;
     text-align: right;
     cursor: pointer;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
   }
 
 .arrow {
@@ -750,7 +755,7 @@ summary {
     }
 
     .filters {
-        max-width: 1046px;
+        max-width: 1050px;
     }
 
     nav ul li a:after {
