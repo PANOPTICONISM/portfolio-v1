@@ -240,67 +240,97 @@
     font-weight: 300;
 }
 
-.recent_project a {
-    font-size: 12px;
-    background: none;
-    height: 40px;
-    width: 190px;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    display: block;
+.button_container {
     grid-row: 3;
-    margin: 13px auto;
+    margin: 20px auto;
 }
 
-.recent_project a:hover::after {
-    transition-duration: 0.5s;
-    transform: scale(1.02);
+.learn-more {
+  position: relative;
+  font-size: 12px;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  width: 12rem;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
-.recent_project a:hover .button_icon {
-    transform: translateY(30%) rotate(0deg);
+.learn-more a {
+    text-decoration: none;
 }
 
-.recent_project a:before {
-    content: '';
-    transition: all 0.4s var(--animationCurve);
-    background: var(--accent-colour);
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    z-index: -1;
-    opacity: 0;
+.learn-more .circle_button {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 3rem;
+    height: 2.8rem;
+    background: #282936;
+    border-radius: 1.625rem;
   }
-  
-  .recent_project a:after {
-    content: '';
-    transition: all 0.4s var(--animationCurve);
-    background: var(--accent-colour);
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+  .learn-more .circle_button .icon_button {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  
+  .learn-more .circle_button .icon_button.icon_arrow {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  .learn-more .circle_button .icon_button.icon_arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.32rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .learn-more .button-text {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    z-index: -1;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
   }
-
-  .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .learn-more:hover .circle_button {
+    width: 100%;
   }
-
-  .button_icon {
-      margin-left: 10px;
-      fill: #F1F4F6;
-      transform: translateY(30%) rotate(-28deg);
+  .learn-more:hover .circle_button .icon_button.icon_arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+  }
+  .learn-more:hover .button-text {
+    color: #fff;
   }
 
 .information {
@@ -545,7 +575,7 @@ summary {
         margin-top: 80px;
     }
 
-    .recent_project a {
+    .button_container {
         grid-column: 1/6;
         grid-row: 1;
         margin-top: 200px;
@@ -690,6 +720,10 @@ summary {
 
     .drawing {
         grid-column: 2/7;
+    }
+
+    .drawing img {
+        width: 500px;
     }
 
     .content {
