@@ -320,6 +320,57 @@
     max-width: 500px;
 }
 
+/* ABOUT ME */
+
+
+.drawing img {
+    display: flex;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 1%;
+    background: var(--subtitle-colour);
+}
+
+.skills_inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #F1F4F6;
+}
+
+.skills img {
+    width: 50px;
+    margin: 20px;
+}
+
+.content {
+    margin: 20px auto;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: var(--subtitle-size);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content h2 {
+    margin: 0;
+    font-size: var(--under-subtitle-size);
+    color: var(--subtitle-colour);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.content p {
+    max-width: 400px;
+    margin: 10px auto;
+    font-size: var(--font-size);
+    font-weight: 300;
+}
+
 /* PORTFOLIO */
 
 .portfolio {
@@ -435,6 +486,7 @@ summary {
 
 @media only screen and (min-width: 997px) {
 
+    /* FEATURED PROJECT */
     .recent_project {
         grid-template-columns: repeat(12, 1fr);
     }
@@ -456,6 +508,7 @@ summary {
         grid-column: 7/-1;
     }
 
+    /* TYPEWRITER */
     .typewriter-text {
         height: 34px;
     }
@@ -463,6 +516,7 @@ summary {
 }
 
 @media only screen and (min-width: 550px) {
+
     .featured {
         margin: auto;
     }
@@ -541,6 +595,7 @@ summary {
         text-align: right;
     }
 
+    /* FEATURED PROJECT */
     .recent_project {
         padding: 50px;
         padding-bottom: 0;
@@ -574,6 +629,24 @@ summary {
 
     .contain h4, .portfolio h4 {
         margin-bottom: 30px;
+    }
+
+    /* ABOUT ME */
+    .aboutme {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 1150px;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    .drawing {
+        grid-column: 2/7;
+    }
+
+    .content {
+        grid-column: 7/12;
+        margin: 0 20px;
     }
 
 }
