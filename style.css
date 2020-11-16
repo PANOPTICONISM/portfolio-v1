@@ -322,13 +322,104 @@
 
 /* ABOUT ME */
 
+.drawing {
+    max-width: 400px;
+    margin: auto;
+}
+
+.hexagon_logo {
+  position: relative;
+  top: 10%;
+  width: 40px;
+  height: 23.19px;
+  margin: auto;
+  margin-left: 0;
+  background-color: var(--accent-colour);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon_logo:before, .hexagon_logo:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+  .hexagon_logo:before {
+    bottom: 100%;
+    border-bottom: 11.09px solid var(--accent-colour);
+  }
+  .hexagon_logo:after {
+    top: 100%;
+    width: 0;
+    border-top: 11.09px solid var(--accent-colour);
+  }
+  
+  .circle_logo {
+    position: absolute;
+    bottom: -11px;
+    right: -7px;
+    margin: auto;
+    width: 14px;
+    height: 14px;
+    background-color: brown;
+    border-radius: 100%;
+    z-index: 3;
+    box-shadow: #FFF9F2 0 0 0 4px;
+  }
+
+.hexagon {
+  position: relative;
+  top: 10%;
+  width: 80px;
+  height: 46.19px;
+  margin: auto;
+  margin-left: 0;
+  background-color: var(--accent-colour);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 2;
+}
+
+.hexagon:before, .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 23.09px solid var(--accent-colour);
+}
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 23.09px solid var(--accent-colour);
+}
+
+.circle {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  background-color: brown;
+  border-radius: 100%;
+  z-index: 3;
+  box-shadow: #FFF9F2 0 0 0 4px;
+}
 
 .drawing img {
     display: flex;
     max-width: 400px;
     margin: auto;
-    border-radius: 1%;
-    background: var(--subtitle-colour);
 }
 
 .skills_inner {

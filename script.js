@@ -25,9 +25,11 @@ $i('.section').each(function (i,el) {
 		} else if (i == 1) {
 			document.querySelector(".page-count p").textContent = "PRESENTATION";
 		} else if (i == 2) {
-			document.querySelector(".page-count p").textContent = "PORTFOLIO";
+			document.querySelector(".page-count p").textContent = "ABOUT";
 		} else if (i == 3) {
-			document.querySelector(".page-count p").textContent = "CONTACT"; 
+			document.querySelector(".page-count p").textContent = "PORTFOLIO"; 
+		} else if (i == 4) {
+			document.querySelector(".page-count p").textContent = "CONTACT";
 		}
 
 		if (direction == 'up') {
@@ -38,6 +40,8 @@ $i('.section').each(function (i,el) {
 				console.log("welcome");
 				document.querySelector(".page-count p").textContent = "WELCOME";
 			} else if (i == 03) {
+				document.querySelector(".page-count p").textContent = "ABOUT";
+			} else if (i == 04) {
 				document.querySelector(".page-count p").textContent = "PORTFOLIO";
 			}
 		}
@@ -102,53 +106,7 @@ $j(document).ready(function() {
   
   });
   
-  // filters 
-
-// // show web design
-// const webDesign = document.querySelector(".web");
-// webDesign.addEventListener("click", showWebdesign);
-
-// const projects = document.querySelectorAll(".projects");
-
-// function showWebdesign() {
-// 	const project = document.querySelectorAll(".project:not(.web)");
-
-// 	project.forEach(elem => {
-// 		console.log("web design");
-// 		console.log(elem);
-// 		elem.classList.add("hidden");
-// 	})
-// }
-
-// //show illustration
-// const illustration = document.querySelector(".illustration");
-// illustration.addEventListener("click", showIllustration);
-
-// function showIllustration() {
-// 	const project = document.querySelectorAll(".project:not(.illustration)");
-
-// 	project.forEach(elem => {
-// 		console.log("illus");
-// 		projects.classList.remove("hidden");
-// 		elem.classList.add("hidden");
-// 	})
-// }
-
-// // show all
-// const all = document.querySelector(".all");
-// all.addEventListener("click", showAll);
-
-// function showAll() {
-// 	const project = document.querySelectorAll(".project");
-
-// 	project.forEach(elem => {
-// 		console.log("all");
-// 		elem.classList.remove("hidden");
-// 	})
-// }
-
-
-
+// filters
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
