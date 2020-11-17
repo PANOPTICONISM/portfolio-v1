@@ -124,9 +124,62 @@
     align-items: center;
 }
 
-.social_media img {
+.social_media svg {
+    fill: black;
+}
+
+.cls-2, .insta-1 {
+    fill: white;
+}
+
+.social_media .in:hover {
+    fill: #0e76a8;
+}
+
+.cls-3 {
+    stroke-miterlimit:10;
+    stroke-width:18px;
+    fill: none;
+    stroke: #fff;
+}
+
+.dribbble_outer:hover {
+    fill: #ea4c89;
+    stroke: #fff;
+}
+
+.tumblr_outer:hover {
+    fill: #314358;
+}
+
+.tumblr-2 {
+    fill: #fff;
+}
+
+.insta-1, .insta-2, .insta-3 {
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+.insta-2, .insta-3 {
+    fill: none;
+}
+
+.insta-2 {
+    stroke-width: 35px;
+}
+
+.insta-3 {
+    stroke-width: 34px;
+}
+
+.insta_outer:hover {
+    fill: #c13584;
+}
+
+.social_media svg {
     width: 34px;
-    margin: 14px 0;
+    margin: 10px 0;
 }
 
 /* SECOND GRID */
@@ -392,15 +445,15 @@
   
   .circle_logo {
     position: absolute;
-    bottom: -13px;
-    right: -5px;
+    bottom: -15px;
+    right: 1px;
     margin: auto;
     width: 14px;
     height: 14px;
     background-color: brown;
     border-radius: 100%;
     z-index: 3;
-    box-shadow: #FFF9F2 0 0 0 4px;
+    box-shadow: #FFF9F2 0 0 0 3px;
   }
 
 .drawing img {
