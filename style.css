@@ -58,7 +58,7 @@
 .title {
     grid-row: 1/2;
     grid-column: 1/12;
-    text-align: center;
+    text-align: right;
 }
 
 .title h1 {
@@ -124,16 +124,12 @@
     align-items: center;
 }
 
-.social_media svg {
-    fill: black;
+.in {
+    fill: #0e76a8;
 }
 
 .cls-2, .insta-1 {
     fill: white;
-}
-
-.social_media .in:hover {
-    fill: #0e76a8;
 }
 
 .cls-3 {
@@ -143,17 +139,21 @@
     stroke: #fff;
 }
 
-.dribbble_outer:hover {
+.dribbble_outer {
     fill: #ea4c89;
     stroke: #fff;
 }
 
-.tumblr_outer:hover {
+.tumblr_outer {
     fill: #314358;
 }
 
 .tumblr-2 {
     fill: #fff;
+}
+
+.insta_outer {
+    fill: #c13584;
 }
 
 .insta-1, .insta-2, .insta-3 {
@@ -173,13 +173,13 @@
     stroke-width: 34px;
 }
 
-.insta_outer:hover {
-    fill: #c13584;
+.insta_outer:hover, .in:hover, .dribbble_outer:hover, .tumblr_outer:hover {
+    fill: #202020;
 }
 
 .social_media svg {
     width: 34px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 /* SECOND GRID */
@@ -413,7 +413,7 @@
 .hexagon_logo {
   position: relative;
   top: 10%;
-  width: 40px;
+  width: 35px;
   height: 23.19px;
   margin: auto;
   margin-left: 0;
@@ -430,8 +430,8 @@
     content: "";
     position: absolute;
     width: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
   }
   .hexagon_logo:before {
     bottom: 100%;
