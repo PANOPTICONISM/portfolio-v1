@@ -475,7 +475,27 @@
 }
 
 .content {
-    margin: 20px;
+    margin: auto;
+    max-width: 380px;
+}
+
+.content table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    font-size: var(--font-size);
+}
+
+th {
+    text-align: left;
+    background: var(--accent-colour);
+    color: white;
+    padding: 5px 10px;
+}
+
+td {
+    text-align: left;
+    padding: 5px 10px;
+    font-weight: 300;
 }
 
 .content h1 {
