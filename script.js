@@ -118,7 +118,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
-
 // Show filtered elements
 function w3AddClass(element, name) {
   var i, arr1, arr2;

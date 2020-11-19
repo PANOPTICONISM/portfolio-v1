@@ -58,7 +58,7 @@
 .title {
     grid-row: 1/2;
     grid-column: 1/12;
-    text-align: right;
+    text-align: center;
 }
 
 .title h1 {
@@ -114,12 +114,10 @@
     grid-column: 1/10;
 }
 
+/* SOCIAL MEDIA */
 .social_media {
     grid-row: 3;
     grid-column: 10/12;
-}
-
-.social_media {
     display: flex;
     align-items: center;
 }
@@ -612,14 +610,6 @@ summary {
   }
 
 /* MEDIA QUERIES */
-
-@media only screen and (min-width: 700px) {
-    .visual_identity, .development, .ui_design {
-        margin: 20px 13px;
-        max-width: none;
-    }
-}
-
 @media only screen and (min-width: 997px) {
 
     /* FEATURED PROJECT */
@@ -669,6 +659,11 @@ summary {
     .areas {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .visual_identity, .development, .ui_design {
+        margin: 20px 13px;
+        max-width: none;
     }
     
 }
