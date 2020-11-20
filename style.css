@@ -524,14 +524,8 @@ td {
 /* PORTFOLIO */
 
 .portfolio {
-    margin: 40px 20px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
+    margin: 40px auto;
+    max-width: 500px;
 }
 
   .btn.active {
@@ -539,8 +533,14 @@ td {
     color: white;
   }
 
+  .row {
+    overflow: hidden;
+  }
+
   .project {
       display: none;
+      float: left;
+      background: chartreuse;
   }
 
   .show {
@@ -761,13 +761,13 @@ summary {
         padding: 20px 0;
     }
 
-    .row img {
-        max-width: 350px;
-        max-height: 260px;
+    .portfolio {
+        max-width: 700px;
     }
 
-    .flex {
-        display: flex;
+    .row img {
+        width: 350px;
+        max-height: 260px;
     }
 
     .filters {
@@ -814,12 +814,8 @@ summary {
     }
 
     .portfolio {
-        width: 1090px;
+        max-width: 1050px;
         margin: 50px auto;
-    }
-
-    .flex {
-        display: inline;
     }
 
     .filters {
