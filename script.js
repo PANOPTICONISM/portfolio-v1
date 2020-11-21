@@ -54,7 +54,7 @@ var $jtoplink = $j('.page-count');
 $jtoplink.click(function() {
     $i('html, body').animate({
         scrollTop: $j('body').offset().top
-    }, 500);
+    }, 100);
 });
 
 // TYPEWRITER
