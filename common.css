@@ -235,7 +235,7 @@ nav ul li a {
 }
 
 
-nav ul li a:after {
+.buttons .btn:after, nav ul li a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -248,7 +248,7 @@ nav ul li a:after {
     transition: transform 0.8s;
 }
 
-nav ul li a:not(#chat):hover:after {
+.buttons .btn:hover:after, nav ul li a:not(#chat):hover:after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
@@ -281,6 +281,7 @@ nav ul li a:not(#chat):hover:after {
     right: 0;
     top: 100%;
     z-index: -1;
+    transition: top 0.49s ease-in;
     -webkit-transition: top 0.49s ease-in;
 }
 
