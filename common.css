@@ -117,7 +117,7 @@ html {
 
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
 }
 
@@ -150,60 +150,8 @@ header,
     max-width: -moz-fit-content;
 }
 
-.logo span {
-    width: 32px;
-    font-weight: 900;
-    text-align: center;
-    color: white;
-}
-
-.hexagon_logo {
-    position: relative;
-    top: 10%;
-    width: 35px;
-    height: 23.19px;
-    margin: auto;
-    margin-left: 0;
-    background-color: var(--accent-colour);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hexagon_logo:before,
-.hexagon_logo:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-}
-
-.hexagon_logo:before {
-    bottom: 100%;
-    border-bottom: 11.09px solid var(--accent-colour);
-}
-
-.hexagon_logo:after {
-    top: 100%;
-    width: 0;
-    border-top: 11.09px solid var(--accent-colour);
-}
-
-.circle_logo {
-    position: absolute;
-    bottom: -15px;
-    right: 1px;
-    margin: auto;
-    width: 14px;
-    height: 14px;
-    background-color: brown;
-    border-radius: 100%;
-    z-index: 3;
-    box-shadow: #FFF9F2 0 0 0 3px;
+.logo_footer .start_logo svg {
+    max-width: 30px;
 }
 
 ul {
@@ -307,7 +255,8 @@ nav ul li a {
 }
 
 .contacts img {
-    width: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 .contacts h4 {
@@ -336,6 +285,7 @@ nav ul li a {
 .email {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #4C728F;
     max-width: 335px;
