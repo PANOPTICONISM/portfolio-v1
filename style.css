@@ -460,47 +460,58 @@
     margin: 20px;
 }
 
-.content {
+.jobs {
     margin: auto;
     max-width: 380px;
 }
 
-.content table {
-    border-collapse: separate;
-    border-spacing: 5px;
-    font-size: var(--font-size);
-}
-
-th {
-    text-align: left;
-    background: var(--accent-colour);
-    color: white;
-    padding: 5px 10px;
-}
-
-td {
-    text-align: left;
-    padding: 5px 10px;
-    font-weight: 300;
-}
-
-.content h1 {
+.jobs h5, .jobs h6 {
     margin: 0;
-    font-size: var(--subtitle-size);
-    text-align: center;
+    font-size: 15px;
+}
+
+.jobs h5 {
+    color: rgb(43, 43, 43);
+}
+
+.line_job, .inner_jobs {
+    position: relative;
+}
+
+.inner_jobs h5 {
     text-transform: uppercase;
 }
 
-.content h2 {
-    margin: 0;
-    font-size: var(--under-subtitle-size);
-    color: var(--subtitle-colour);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
+.inner_jobs:after {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-colour);
+    width: 2px;
+    top: 6px;
+    bottom: 0;
+    left: -10px;
 }
 
-.content p {
+.line_job:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -14px;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-colour);
+}
+
+
+.jobs h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.jobs p {
     max-width: 400px;
     margin: 10px auto;
     font-size: var(--font-size);
@@ -805,7 +816,7 @@ summary::-webkit-details-marker {
         width: 500px;
     }
 
-    .content {
+    .jobs {
         grid-row: 1;
         grid-column: 7/12;
         margin: 0 20px;
