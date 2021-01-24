@@ -480,6 +480,7 @@
 
 .inner_jobs h5 {
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .inner_jobs:after {
@@ -515,6 +516,7 @@
     margin: 10px auto;
     font-size: var(--font-size);
     font-weight: 300;
+    margin-top: 0;
 }
 
 /* PORTFOLIO */
@@ -695,7 +697,6 @@ summary::-webkit-details-marker {
     .development,
     .ui_design {
         margin: 20px 13px;
-        max-width: none;
     }
 
 }
