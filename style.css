@@ -438,6 +438,7 @@
 .drawing {
     max-width: 400px;
     margin: auto;
+    margin-bottom: 0;
 }
 
 .drawing img {
@@ -677,6 +678,10 @@ summary::-webkit-details-marker {
 @media only screen and (min-width: 550px) {
 
     .featured {
+        margin: auto;
+    }
+
+    .jobs {
         margin: auto;
     }
 }
