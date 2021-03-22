@@ -99,7 +99,7 @@
     --subtitle-size: 22px;
     --title-size: 30px;
     --accent-colour: #314364;
-    --subtitle-colour: #E6CA59;
+    --subtitle-colour: #d8b012;
 }
 
 body {
@@ -185,7 +185,8 @@ nav ul li a {
 }
 
 
-.buttons .btn:after, nav ul li a:after {
+.buttons .btn:after,
+nav ul li a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -198,7 +199,8 @@ nav ul li a {
     transition: transform 0.8s;
 }
 
-.buttons .btn:hover:after, nav ul li a:not(#chat):hover:after {
+.buttons .btn:hover:after,
+nav ul li a:not(#chat):hover:after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
@@ -340,6 +342,7 @@ textarea {
     border: none;
     border-bottom: 1px solid lightgrey;
     background: none;
+    width: 100%;
 }
 
 textarea::placeholder,
