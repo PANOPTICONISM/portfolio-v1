@@ -77,3 +77,10 @@ p {
 .details h3 {
     margin: 0;
 }
+
+.project {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
