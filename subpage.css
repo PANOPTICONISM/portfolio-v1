@@ -79,8 +79,24 @@ p {
 }
 
 .project {
+    margin-bottom: 30px;
+}
+
+.project_top {
     max-width: 700px;
     margin: auto;
     padding: 20px;
     margin-bottom: 30px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EBEFF2;
+}
+
+.grid img {
+    max-width: 600px;
+    height: auto;
+    margin: auto;
 }
