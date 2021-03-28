@@ -111,7 +111,7 @@ $j(document).ready(function () {
 });
 
 // filters
-filterSelection("all")
+filterSelection("all");
 
 function filterSelection(c) {
 	var x, i;

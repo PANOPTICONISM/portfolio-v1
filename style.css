@@ -131,6 +131,16 @@
     align-items: center;
 }
 
+.social_media ul li:hover,
+.row>div:hover {
+    transition: all 0.9s;
+    transform: scale(0.8);
+}
+
+.transition {
+    transition: all 1s;
+}
+
 .in {
     fill: #0e76a8;
 }

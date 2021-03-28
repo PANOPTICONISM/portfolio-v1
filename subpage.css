@@ -71,7 +71,6 @@ p {
     text-align: center;
     width: 250px;
     margin: 20px;
-    padding: 40px;
 }
 
 .details h3 {
@@ -89,14 +88,18 @@ p {
     margin-bottom: 30px;
 }
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #EBEFF2;
+.project_v {
+    background-color: #343A3A;
+    margin-bottom: 20px;
 }
 
-.grid img {
-    max-width: 600px;
-    height: auto;
-    margin: auto;
+@media (min-width: 800px) {
+    .details>div {
+        padding: 40px;
+    }
+
+    .project_inner {
+        max-width: 900px;
+        margin: auto;
+    }
 }
