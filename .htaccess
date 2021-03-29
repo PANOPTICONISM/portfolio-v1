@@ -4,6 +4,9 @@ RewriteEngine on
 RewriteCond %{REQUEST_URI} ^/(.+)\.html?$ [nocase]
 RewriteRule ^ /%1 [L,R=301]
 
+# redirect index to root
+RewriteRule ^index\.html$ / [NC,R,L]
+
 # Quietly point back to the HTML file (temporary/undefined redirect):
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
