@@ -30,7 +30,7 @@ shape.forEach(b => {
             opacity: 1,
         },
         {
-            offset: .25,
+            offset: .45,
             transform: `translate(${endX}px,${endY}px) 
                       scale(${randomScale})`,
             opacity: randomOpacity,
