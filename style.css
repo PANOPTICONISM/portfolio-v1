@@ -223,54 +223,6 @@
     margin: auto 30px;
 }
 
-.contain h3,
-.portfolio h3 {
-    font-size: var(--subtitle-size);
-    margin: 0px auto;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    max-width: 300px;
-}
-
-.contain h3:before,
-.contain h4:after,
-.portfolio h3:before,
-.portfolio h4:after {
-    width: 30px;
-    height: 30px;
-    content: '';
-    position: absolute;
-}
-
-.contain h3:before,
-.portfolio h3:before {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    top: -7px;
-    left: -13px;
-}
-
-.contain h4:after,
-.portfolio h4:after {
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    bottom: -7px;
-    right: -13px;
-}
-
-.contain h4,
-.portfolio h4 {
-    color: var(--subtitle-colour);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-size: var(--under-subtitle-size);
-    position: relative;
-    max-width: 300px;
-    margin-bottom: 40px;
-}
-
 .visual_identity,
 .ui_design,
 .development {
