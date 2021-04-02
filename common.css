@@ -263,28 +263,6 @@ nav ul li a:not(#chat):hover:after {
     margin-bottom: 40px;
 }
 
-.subtitle:before,
-.subtitle_inner:after {
-    width: 30px;
-    height: 30px;
-    content: '';
-    position: absolute;
-}
-
-.subtitle:before {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    top: -7px;
-    left: -13px;
-}
-
-.subtitle_inner:after {
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    bottom: -7px;
-    right: -13px;
-}
-
 /* FOOTER */
 /* THIRD CONTAINER */
 .container h3 {
