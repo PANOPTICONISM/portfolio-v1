@@ -81,7 +81,6 @@ p {
 .details {
     width: max-content;
     margin: auto;
-    margin-bottom: 30px;
 }
 
 .details>div {
@@ -91,6 +90,10 @@ p {
 .details h2 {
     margin: 0;
     font-size: 20px;
+}
+
+.grid img {
+    margin-bottom: 50px;
 }
 
 .project {
@@ -115,6 +118,18 @@ p {
     max-width: 700px;
     margin: auto;
     margin-bottom: 50px;
+    position: relative;
+}
+
+.the_issue p::before {
+    position: absolute;
+    font-size: 25px;
+    left: -35px;
+    top: -12px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900;
+    color: var(--accent-colour);
 }
 
 .number {
