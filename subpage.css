@@ -151,11 +151,10 @@ p {
     grid-template-rows: auto;
     max-width: 1150px;
     margin: 15px auto;
-    padding: 80px;
+    padding: 40px;
 }
 
 .title_right {
-    order: 2;
     position: relative;
 }
 
@@ -254,7 +253,7 @@ p {
 
 @media (max-width: 800px) {
     .steps>div:first-of-type {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 }
 
@@ -271,6 +270,19 @@ p {
         justify-content: space-evenly;
         max-width: 1500px;
         margin: auto;
+    }
+
+    .steps>div {
+        margin: 20px;
+    }
+
+    .title_right {
+        order: 2;
+    }
+
+    .the_issue,
+    .the_solution {
+        padding: 80px;
     }
 }
 
