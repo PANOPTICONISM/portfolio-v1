@@ -1,6 +1,6 @@
 main {
-    background: rgb(49, 67, 100);
-    background: radial-gradient(circle, rgba(49, 67, 100, 1) 0%, rgba(14, 13, 30, 1) 50%);
+    /* background: rgb(49, 67, 100);
+    background: radial-gradient(circle, rgba(49, 67, 100, 1) 0%, rgba(14, 13, 30, 1) 50%); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -9,6 +9,30 @@ main {
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 500px solid var(--accent-colour);
+    border-left: 100vw solid transparent;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 500px solid rgb(35, 122, 96);
+    border-right: 100vw solid transparent;
+    z-index: -1;
 }
 
 h1 {
@@ -114,10 +138,53 @@ p {
 
 /* PROJECT */
 
-.the_issue p:first-of-type {
-    max-width: 700px;
+.the_issue .subtitle,
+.the_issue .subtitle_inner {
+    text-align: left;
+    display: block;
+}
+
+.the_issue,
+.the_solution {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    max-width: 1150px;
+    margin: 15px auto;
+    padding: 80px;
+}
+
+.title_right {
+    order: 2;
+    position: relative;
+}
+
+.title_right::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 12px solid #6a9dc2;
+    z-index: -1;
+}
+
+b {
+    font-weight: 500;
+}
+
+.title_right .subtitle,
+.title_right .subtitle_inner {
+    text-align: right;
+    display: block;
+}
+
+.the_issue p,
+.the_solution p {
+    max-width: 400px;
     margin: auto;
-    margin-bottom: 50px;
     position: relative;
 }
 
@@ -129,7 +196,23 @@ p {
     font-family: "Font Awesome 5 Free";
     content: "\f10d";
     font-weight: 900;
-    color: var(--accent-colour);
+    color: var(--subtitle-colour);
+}
+
+.title {
+    position: relative;
+}
+
+.the_issue .title::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 12px solid #6a9dc2;
+    z-index: -1;
 }
 
 .number {
@@ -165,8 +248,8 @@ p {
     margin-bottom: 8px;
 }
 
-.steps p {
-    font-size: 13px;
+p {
+    font-size: 14px;
 }
 
 @media (max-width: 800px) {
