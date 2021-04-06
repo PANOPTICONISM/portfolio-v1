@@ -142,16 +142,6 @@ p {
     display: block;
 }
 
-.the_issue,
-.the_solution {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: auto;
-    max-width: 1150px;
-    margin: 15px auto;
-    padding: 40px;
-}
-
 .title_right {
     position: relative;
 }
@@ -166,6 +156,10 @@ p {
     border-radius: 50%;
     border: 12px solid #6a9dc2;
     z-index: -1;
+}
+
+.the_process {
+    padding: 30px 0;
 }
 
 .the_process .subtitle_inner {
@@ -184,10 +178,13 @@ p {
     z-index: -1;
 }
 
-.ideation_wireframes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: auto;
+.the_issue {
+    padding: 20px 35px;
+}
+
+.the_solution {
+    padding: 20px;
+    padding-top: 40px;
 }
 
 b {
@@ -253,7 +250,7 @@ b {
 .steps>div {
     max-width: 320px;
     margin: 30px auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 20px;
     border-radius: 4px 40px 4px 4px;
     -webkit-box-shadow: 0px 0px 5px 0px rgb(161 161 161);
@@ -299,6 +296,22 @@ p {
     .the_issue,
     .the_solution {
         padding: 80px;
+    }
+
+    .the_issue,
+    .the_solution {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto;
+        max-width: 1150px;
+        margin: 15px auto;
+        padding: 40px;
+    }
+
+    .ideation_wireframes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto;
     }
 }
 
