@@ -230,6 +230,8 @@ p {
     font-size: 14px;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 800px) {
     .steps>div:first-of-type {
         margin-top: 40px;
@@ -283,9 +285,6 @@ p {
         padding: 60px;
     }
 
-    .description {
-        padding: 80px;
-    }
 }
 
 @media (min-width: 877px) {
@@ -302,5 +301,11 @@ p {
 
     .title_right {
         order: 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .description {
+        padding: 80px;
     }
 }
