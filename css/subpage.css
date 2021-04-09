@@ -1,46 +1,31 @@
 main {
-    /* background: rgb(49, 67, 100);
-    background: radial-gradient(circle, rgba(49, 67, 100, 1) 0%, rgba(14, 13, 30, 1) 50%); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
+    z-index: -2;
+}
+
+.description {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-main::after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: var(--accent-colour);
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgb(35, 122, 96);
-    z-index: -1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
 }
 
 h1 {
     text-align: center;
 }
 
+main {
+    position: relative;
+    overflow: hidden;
+}
+
 .background_shapes {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 20%;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -82,13 +67,6 @@ h1 {
     transform: rotate(-45deg)
 }
 
-.description {
-    max-width: 800px;
-    margin: auto;
-    padding: 40px;
-    color: white;
-}
-
 .description h1 {
     text-transform: uppercase;
     font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
@@ -114,24 +92,8 @@ p {
     font-size: 20px;
 }
 
-.grid img {
-    margin-bottom: 50px;
-}
-
 .project {
     margin-bottom: 30px;
-}
-
-.project_top {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.project_v {
-    background-color: #343A3A;
-    margin-bottom: 20px;
 }
 
 /* PROJECT */
@@ -268,6 +230,8 @@ p {
     font-size: 14px;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 800px) {
     .steps>div:first-of-type {
         margin-top: 40px;
@@ -313,6 +277,14 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-template-rows: auto;
     }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto;
+        padding: 60px;
+    }
+
 }
 
 @media (min-width: 877px) {
@@ -329,5 +301,11 @@ p {
 
     .title_right {
         order: 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .description {
+        padding: 80px;
     }
 }

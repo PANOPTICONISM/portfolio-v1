@@ -772,7 +772,7 @@ summary::-webkit-details-marker {
     }
 
     /* ABOUT ME */
-    .aboutme {
+    .job_experience {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         max-width: 1150px;
