@@ -194,13 +194,6 @@
     stroke-width: 34px;
 }
 
-.insta_outer:hover,
-.in:hover,
-.dribbble_outer:hover,
-.tumblr_outer:hover {
-    fill: #202020;
-}
-
 .social_media svg {
     width: 34px;
     margin: 5px 0;

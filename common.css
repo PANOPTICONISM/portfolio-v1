@@ -148,8 +148,9 @@ header,
     max-width: -moz-fit-content;
 }
 
-.logo a {
+header a {
     text-decoration: none;
+    color: black;
 }
 
 .logo_footer .start_logo svg {
@@ -329,6 +330,13 @@ nav ul li a:not(#chat):hover:after {
 .email:hover {
     background: #FFD400;
     color: black;
+}
+
+.insta_outer:hover,
+.in:hover,
+.dribbble_outer:hover,
+.tumblr_outer:hover {
+    fill: brown;
 }
 
 .contacts h5 {
