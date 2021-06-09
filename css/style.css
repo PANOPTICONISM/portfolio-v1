@@ -423,7 +423,7 @@
 }
 
 .skills img {
-    width: 50px;
+    width: auto;
     height: 50px;
     margin: 20px;
 }
