@@ -332,13 +332,6 @@ nav ul li a:not(#chat):hover:after {
     color: black;
 }
 
-.insta_outer:hover,
-.in:hover,
-.dribbble_outer:hover,
-.tumblr_outer:hover {
-    fill: brown;
-}
-
 .contacts h5 {
     font-size: 16px;
     margin: 5px 0;
